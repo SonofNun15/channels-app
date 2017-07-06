@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Marvel|Open+Sans+Condensed:300');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+body {
+  background-color: #222;
+  display: flex;
+  flex-direction: column-reverse;
+
+  color: #BBB;
+  font-family: 'Marvel', sans-serif;
+  /*font-family: 'Open Sans Condensed', sans-serif;*/
+  /*font-family: 'Dosis', sans-serif;*/
+}
+
+#app-info {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: 0;
+  align-items: center;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+#app-info p {
+  flex-grow: 1;
+  font-style: italic;
+  margin-left: 30px;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 68px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+#page {
+  margin: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#page h2 {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 20px;
+  flex-grow: 0;
+}
+
+.area {
+  background-color: #181818;
+  flex-grow: 1;
+}
+
+input {
+  background-color: #000;
+  border: 1px solid #000;
+  font-size: 16px;
+  color: white;
+  padding: 2px;
+}
+
+button:focus, input:focus {
+  border: 1px solid #EEE;
+  outline: none;
+  color: white;
+}
+
+#page .auth-options {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  /*border-top: 1px solid #888;*/
+  /*border-bottom: 1px solid #888;*/
+}
+
+#page .auth-option {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+#page .auth-option .area {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#page .auth-option .account-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#page .auth-option .account-options .field {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#page .auth-option .account-options .field label {
+  margin-right: 5px;
+  text-align: right;
+  flex-grow: 1;
+}
+
+#page .auth-option .account-options .field input {
+  width: 160px;
+}
+
+#page .auth-option .account-options form button {
+  width: 100%;
+}
+
+#page .auth-option .area button.account-button {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#page h3 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+button {
+  border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #EEE;
+  font-size: 18px;
+  font-family: 'Marvel', sans-serif;
+}
