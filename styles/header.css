@@ -1,0 +1,33 @@
+header.main {
+    background: #5a6378;
+    color: white;
+
+    padding: 10px;
+
+    border-bottom: 1px solid #444444;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.main h1 {
+    margin: 0;
+}
+
+header.main .profile {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header.main .profile button {
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+
+header.main .profile .name {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-right: 5px;
+}

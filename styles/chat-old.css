@@ -1,0 +1,115 @@
+#page {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .category {
+  flex-grow: 1;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+nav .category .area {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.category.new {
+  color: green;
+}
+
+.category.active {
+  color: red;
+}
+
+.category.popular {
+  color: yellow;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.conversations {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.conversations .conversation {
+  width: 400px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversation .area {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px 10px 0 10px;
+}
+
+.conversation input {
+  width: 100%;
+  padding: 4px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.conversation ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.conversation .chat {
+  margin-bottom: 10px;
+}
+
+.conversation .chat img {
+  float: left;
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+}
+
+.conversation .chat header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.conversation .chat .author {
+  flex-grow: 1;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.conversation .chat .time {
+  font-size: 0.9em;
+}
+
+.conversation .chat p {
+  margin: 0;
+  margin-top: 3px;
+}
